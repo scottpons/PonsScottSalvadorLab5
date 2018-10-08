@@ -59,7 +59,7 @@ public class Activity2 extends AppCompatActivity {
         Intent i = null, chooser = null;
         if (v.getId() == R.id.btn_map2) {
             i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("http://maps.google.com/maps?q=loc:"+"14.656660"+","+"121.111470(Marikina Sports Center)"));
+            i.setData(Uri.parse("geo:?q=loc:"+"14.656660"+","+"121.111470(Marikina Sports Center)"));
             chooser = Intent.createChooser(i, "Choose Your Map App");
             startActivity(chooser);
         }
